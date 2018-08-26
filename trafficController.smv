@@ -1,0 +1,268 @@
+--Author: Allen Bates, Krishna Sindhuja, Marcos Moraes, Hao Chen
+--Description: Traffic Controller
+--Date: 9 April 2017
+MODULE main
+    VAR 
+        laneAisGreen : boolean;
+	    laneBisGreen : boolean;
+		--Light traffic can imply there aren't any cars
+        laneAtraffic : {light, heavy};
+        laneBtraffic : {light, heavy};
+        laneAbuttonClicked : boolean;
+        laneBbuttonClicked : boolean;
+        eVeh : {inLaneA, inLaneB, absent};
+        lightInterval : 30..300;
+	    walkInterval : 10..100;
+		eVehInterval : 10..30;
+		lightIntervalTimer : 0..300;
+		walkIntervalTimer : 0..100;
+		eVehIntervalTimer : 0..30;
+		
+    ASSIGN
+--------------------Initializations--------------------
+	    init(lightInterval) := 30;
+		init(walkInterval) := 10;
+		init(eVehInterval) := 10;
+		init(lightIntervalTimer) := 0;
+		init(walkIntervalTimer) := 0;
+		init(eVehIntervalTimer) := 0;
+        init(laneAisGreen) := !laneBisGreen;
+		
+--------------------Lane A's Light--------------------
+        next(laneAisGreen) := 
+            case
+			    --If the emergency vehicle is in Lane A,
+				--then Lane A will stay green for the set time interval.
+				--After it has passed, it will turn red 
+				--in either lane or not be present at all
+				eVeh = inLaneA & eVehIntervalTimer < eVehInterval : TRUE;
+				eVeh = inLaneA & eVehIntervalTimer >= eVehInterval : FALSE;
+				
+			    --If the emergency vehicle is in Lane B,
+				--then Lane A will stay red for the set time interval.
+				--After it has passed, it will turn green 
+				--in either lane or not be present at all
+				eVeh = inLaneB & eVehIntervalTimer < eVehInterval : FALSE;
+				eVeh = inLaneB & eVehIntervalTimer >= eVehInterval : TRUE;
+			
+			    --If Lane A is green and Lane A's walk button is pressed,
+				--then Lane A will stay green for the set walk interval time
+			    laneAisGreen = TRUE & laneAbuttonClicked = TRUE & walkIntervalTimer < walkInterval : TRUE;
+				laneAisGreen = TRUE & laneAbuttonClicked = TRUE & walkIntervalTimer >= walkInterval : FALSE;	
+				
+				--If Lane B is green and Lane B's walk button is pressed,
+				--then Lane A will stay red for the set walk interval time
+			    laneBisGreen = TRUE & laneBbuttonClicked = TRUE & walkIntervalTimer < walkInterval : FALSE;
+				laneBisGreen = TRUE & laneBbuttonClicked = TRUE & walkIntervalTimer >= walkInterval : TRUE;
+				
+			    --Once Lane A turns green, Lane A stays green for the set light interval time
+				--After enough time has passed, Lane A will turn red 
+			    laneAisGreen = TRUE & lightIntervalTimer < lightInterval : TRUE;
+				laneAisGreen = TRUE & lightIntervalTimer >= lightInterval : FALSE;
+				
+				--Once Lane B turns green, Lane A stays red for the set light interval time
+				--After enough time has passed, Lane A will turn green
+				laneBisGreen = TRUE & lightIntervalTimer < lightInterval : FALSE;
+				laneBisGreen = TRUE & lightIntervalTimer >= lightInterval : TRUE;
+
+				TRUE : !laneBisGreen;
+            esac;
+
+--------------------Lane B's Light--------------------
+        next(laneBisGreen) := 
+            case
+			    --If the emergency vehicle is in Lane A,
+				--then Lane B will stay red for the set time interval.
+				--After it has passed, it will turn green
+				--in either lane or not be present at all
+				eVeh = inLaneA & eVehIntervalTimer < eVehInterval : FALSE;
+				eVeh = inLaneA & eVehIntervalTimer >= eVehInterval : TRUE;
+				
+			    --If the emergency vehicle is in Lane B,
+				--then Lane B will stay green for the set time interval.
+				--After it has passed, it will turn red 
+				--in either lane or not be present at all
+				eVeh = inLaneB & eVehIntervalTimer < eVehInterval : TRUE;
+				eVeh = inLaneB & eVehIntervalTimer >= eVehInterval : FALSE;
+			
+			    --If Lane B is green and the walk button is pressed,
+				--then Lane B will stay green for the set walk interval time
+			    laneBisGreen = TRUE & laneBbuttonClicked = TRUE & walkIntervalTimer < walkInterval : TRUE;
+				laneBisGreen = TRUE & laneBbuttonClicked = TRUE & walkIntervalTimer >= walkInterval : FALSE;
+				
+				--If Lane A is green and Lane A's walk button is pressed,
+				--then Lane B will stay red for the set walk interval time
+			    laneAisGreen = TRUE & laneAbuttonClicked = TRUE & walkIntervalTimer < walkInterval : FALSE;
+				laneAisGreen = TRUE & laneAbuttonClicked = TRUE & walkIntervalTimer >= walkInterval : TRUE;
+			
+			    --Once Lane B turns green, Lane B stays green for the set light interval time
+				--After enough time has passed, Lane A will turn red 
+			    laneBisGreen = TRUE & lightIntervalTimer < lightInterval : TRUE;
+				laneBisGreen = TRUE & lightIntervalTimer >= lightInterval : FALSE;
+				
+				--Once Lane A turns green, Lane B stays red for the set light interval time
+				--After enough time has passed, Lane B will turn green
+				laneAisGreen = TRUE & lightIntervalTimer < lightInterval : FALSE;
+				laneAisGreen = TRUE & lightIntervalTimer >= lightInterval : TRUE;
+				
+				TRUE : !laneAisGreen;
+            esac;
+--------------------Light Interval and Timer--------------------
+        next(lightInterval) :=
+            case
+			    --If traffic is heavy and incrementing the interval won't breach the upper bound,
+				--increment the light interval
+				laneAtraffic = heavy & laneBtraffic = heavy & lightInterval < 300: lightInterval + 1;
+				
+				--If traffic is light and decrementing the interval won't breach the lower bound,
+				--then decrement the light interval
+			    laneAtraffic = light & laneBtraffic = light & lightInterval > 30 : lightInterval - 1;
+						
+				TRUE : lightInterval;
+            esac;
+			
+		next(lightIntervalTimer) :=
+		    case
+			    --If an emergency vehicle is present, then the timer is reset
+				eVeh = inLaneA : 0;
+				eVeh = inLaneB : 0;
+			
+			    --If a walk button is active,
+				--then reset the light interval timer
+			    laneAbuttonClicked = TRUE : 0;
+				laneBbuttonClicked = TRUE : 0;
+				
+				--If the timer exceeds the light timer, reset the timer
+			    lightIntervalTimer >= lightInterval : 0;
+				
+			    TRUE : lightIntervalTimer + 1;
+			esac;
+			
+--------------------Walk Interval and Timer--------------------
+        next(walkInterval) :=
+            case
+			    --If traffic is heavy and incrementing the interval won't breach the upper bound,
+				--increment the walk interval
+				laneAtraffic = heavy & laneBtraffic = heavy & walkInterval < 100: walkInterval + 1;
+				
+				--If traffic is light and decrementing the interval won't breach the lower bound,
+				--then decrement the walk interval
+			    laneAtraffic = light & laneBtraffic = light & walkInterval > 10 : walkInterval - 1;
+				
+				TRUE : walkInterval;
+            esac;
+			
+		next(walkIntervalTimer) :=
+		    case
+			    --If an emergency vehicle is present, then the timer resets
+				eVeh = inLaneA : 0;
+				eVeh = inLaneB : 0;
+			
+			    --If the timer exceeds the walk timer, reset the timer
+			    walkIntervalTimer >= walkInterval : 0;
+				
+				--If either of the walk buttons are pressed, increment the timer
+				laneAbuttonClicked = TRUE : walkIntervalTimer + 1;
+				laneBbuttonClicked = TRUE : walkIntervalTimer + 1;
+				
+	            --Otherwise, set the timer to zero
+			    TRUE : 0;
+			esac;
+			
+--------------------Walk Buttons--------------------
+        next(laneAbuttonClicked) :=
+		    case
+			    --If an emergency vehicle is present, then the button is inactive
+				eVeh = inLaneA : FALSE;
+				eVeh = inLaneB : FALSE;
+				
+			    --If Lane A is already red,
+				--then Lane A's walk button doesn't need to be pressed
+				laneAisGreen = FALSE : FALSE;
+			
+			    --If the walk button for both Lane A and Lane B are pressed,
+				--then priority goes to Lane A
+			    laneAbuttonClicked = TRUE & laneBbuttonClicked = TRUE : TRUE;
+				
+			    --If Lane A's walk button is pressed, 
+				--then that button stays active for the set walk interval
+				--After enough time has passed, the walk button for A will turn inactive
+			    laneAbuttonClicked = TRUE & walkIntervalTimer < walkInterval : TRUE;
+				laneAbuttonClicked = TRUE & walkIntervalTimer >= walkInterval : FALSE;
+				
+				--If Lane B's walk button is pressed,
+				--then Lane A's button is inactive for the set walk interval
+				laneBbuttonClicked = TRUE & walkIntervalTimer < walkInterval : FALSE;
+				TRUE : {TRUE, FALSE};
+			esac;
+			
+        next(laneBbuttonClicked) :=
+		    case
+			    --If an emergency vehicle is present, then the button is inactive
+				eVeh = inLaneA : FALSE;
+				eVeh = inLaneB : FALSE;
+			
+			    --If Lane B is already red,
+				--then Lane B's walk button doesn't need to be pressed
+			    laneBisGreen = FALSE : FALSE;
+			    
+			    --If the walk button for both Lane A and Lane B are pressed,
+				--then priority goes to Lane A
+			    laneAbuttonClicked = TRUE & laneBbuttonClicked = TRUE : FALSE;
+				
+			    --If the walk button for Lane A is pressed,
+				--the button stays active for the set walk interval.
+				--After enough time has passed, the walk button for A will turn inactive
+			    laneBbuttonClicked = TRUE & walkIntervalTimer < walkInterval : TRUE;
+				laneBbuttonClicked = TRUE & walkIntervalTimer >= walkInterval : FALSE;
+				
+				--If Lane A's walk button is pressed,
+				--then Lane B's button is inactive for the set walk interval
+				laneAbuttonClicked = TRUE & walkIntervalTimer < walkInterval : FALSE;
+				TRUE : {TRUE, FALSE};
+			esac;
+
+--------------------Emergency Vehicle Timer--------------------		
+		next(eVehIntervalTimer) :=
+		    case
+			    --If the timer exceeds the set time interval, reset the timer
+				eVehIntervalTimer >= eVehInterval : 0;
+				
+			    --If an emergency vehicle is present in Lane A, increment the timer
+				eVeh = inLaneA : eVehIntervalTimer + 1;
+				
+				--If an emergency vehicle is present in Lane B, increment the timer
+				eVeh = inLaneB : eVehIntervalTimer + 1;
+				
+			    TRUE : 0;
+			esac;
+--------------------Emergency Vehicle--------------------
+        next(eVeh) :=
+		    case
+			    --If the emergency vehicle is in Lane A,
+				--then allow it to be in that lane for the set time interval.
+				--After it has passed, it will be absent
+				eVeh = inLaneA & eVehIntervalTimer < eVehInterval : inLaneA;
+				eVeh = inLaneA & eVehIntervalTimer >= eVehInterval : absent;
+				
+			    --If the emergency vehicle is in Lane B,
+				--then allow it to be in that lane for the set time interval.
+				--After it has passed, it will be absent 
+				eVeh = inLaneB & eVehIntervalTimer < eVehInterval : inLaneB;
+				eVeh = inLaneB & eVehIntervalTimer >= eVehInterval : absent;
+				
+				TRUE : {inLaneA, inLaneB, absent};
+			esac;
+
+--------------------Safety Properties--------------------
+		SPEC AG (laneAisGreen = !laneBisGreen)
+		SPEC AF (eVeh = inLaneB -> laneBisGreen = TRUE)
+		SPEC AF (eVeh = inLaneA -> laneBisGreen = FALSE)
+		
+--------------------Liveness Properties--------------------
+        SPEC EF(laneAisGreen = TRUE -> laneAbuttonClicked = TRUE)
+		SPEC EG((laneAisGreen = TRUE & lightIntervalTimer >= lightInterval) -> (laneBisGreen = TRUE & laneAisGreen = FALSE))
+		SPEC EG((laneAisGreen = FALSE & laneBtraffic = light & laneAtraffic = heavy)->EF(laneAisGreen = TRUE))
+
+--------------------Anti-Property--------------------
+        -SPEC AG(laneAisGreen = TRUE & laneBisGreen = TRUE)

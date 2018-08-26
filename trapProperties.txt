@@ -1,0 +1,432 @@
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:37:51 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:37:51 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:37:51 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:37:51 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:37:51 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:37:51 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:37:51 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:37:51 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:37:51 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+-- specification AG (laneAisGreen = TRUE & laneBisGreen = TRUE)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 1.1 <-
+    laneAisGreen = TRUE
+    laneBisGreen = FALSE
+    laneAtraffic = light
+    laneBtraffic = light
+    laneAbuttonClicked = FALSE
+    laneBbuttonClicked = FALSE
+    eVeh = inLaneA
+    lightInterval = 30
+    walkInterval = 10
+    eVehInterval = 10
+    lightIntervalTimer = 0
+    walkIntervalTimer = 0
+    eVehIntervalTimer = 0
+-- specification AG (eVeh = inLaneA -> !(walkIntervalTimer = 0))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 2.1 <-
+    laneAisGreen = TRUE
+    laneBisGreen = FALSE
+    laneAtraffic = light
+    laneBtraffic = light
+    laneAbuttonClicked = FALSE
+    laneBbuttonClicked = FALSE
+    eVeh = inLaneA
+    lightInterval = 30
+    walkInterval = 10
+    eVehInterval = 10
+    lightIntervalTimer = 0
+    walkIntervalTimer = 0
+    eVehIntervalTimer = 0
+-- specification AG (((eVeh = absent & laneAbuttonClicked = TRUE) & laneBbuttonClicked = TRUE) -> !(laneAbuttonClicked = TRUE))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 3.1 <-
+    laneAisGreen = TRUE
+    laneBisGreen = FALSE
+    laneAtraffic = light
+    laneBtraffic = light
+    laneAbuttonClicked = TRUE
+    laneBbuttonClicked = TRUE
+    eVeh = absent
+    lightInterval = 30
+    walkInterval = 10
+    eVehInterval = 10
+    lightIntervalTimer = 0
+    walkIntervalTimer = 0
+    eVehIntervalTimer = 0
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:37:51 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+-- specification AX ((eVeh = inLaneA & eVehIntervalTimer < eVehInterval) -> !(eVeh = inLaneA))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 1.1 <-
+    laneAisGreen = TRUE
+    laneBisGreen = FALSE
+    laneAtraffic = light
+    laneBtraffic = light
+    laneAbuttonClicked = FALSE
+    laneBbuttonClicked = FALSE
+    eVeh = inLaneA
+    lightInterval = 30
+    walkInterval = 10
+    eVehInterval = 10
+    lightIntervalTimer = 0
+    walkIntervalTimer = 0
+    eVehIntervalTimer = 0
+  -> State: 1.2 <-
+    eVehIntervalTimer = 1
+-- specification AG (laneAisGreen = TRUE & laneBisGreen = TRUE)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 2.1 <-
+    laneAisGreen = TRUE
+    laneBisGreen = FALSE
+    laneAtraffic = light
+    laneBtraffic = light
+    laneAbuttonClicked = FALSE
+    laneBbuttonClicked = FALSE
+    eVeh = inLaneA
+    lightInterval = 30
+    walkInterval = 10
+    eVehInterval = 10
+    lightIntervalTimer = 0
+    walkIntervalTimer = 0
+    eVehIntervalTimer = 0
+-- specification AG (eVeh = inLaneA -> !(walkIntervalTimer = 0))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 3.1 <-
+    laneAisGreen = TRUE
+    laneBisGreen = FALSE
+    laneAtraffic = light
+    laneBtraffic = light
+    laneAbuttonClicked = FALSE
+    laneBbuttonClicked = FALSE
+    eVeh = inLaneA
+    lightInterval = 30
+    walkInterval = 10
+    eVehInterval = 10
+    lightIntervalTimer = 0
+    walkIntervalTimer = 0
+    eVehIntervalTimer = 0
+-- specification AG (laneAbuttonClicked = TRUE -> !(laneBisGreen = TRUE))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 4.1 <-
+    laneAisGreen = TRUE
+    laneBisGreen = FALSE
+    laneAtraffic = light
+    laneBtraffic = light
+    laneAbuttonClicked = FALSE
+    laneBbuttonClicked = FALSE
+    eVeh = inLaneA
+    lightInterval = 30
+    walkInterval = 10
+    eVehInterval = 10
+    lightIntervalTimer = 0
+    walkIntervalTimer = 0
+    eVehIntervalTimer = 0
+  -> State: 4.2 <-
+    laneAtraffic = heavy
+    eVehIntervalTimer = 1
+  -> State: 4.3 <-
+    eVehIntervalTimer = 2
+  -> State: 4.4 <-
+    eVehIntervalTimer = 3
+  -> State: 4.5 <-
+    eVehIntervalTimer = 4
+  -> State: 4.6 <-
+    eVehIntervalTimer = 5
+  -> State: 4.7 <-
+    eVehIntervalTimer = 6
+  -> State: 4.8 <-
+    eVehIntervalTimer = 7
+  -> State: 4.9 <-
+    eVehIntervalTimer = 8
+  -> State: 4.10 <-
+    eVehIntervalTimer = 9
+  -> State: 4.11 <-
+    eVehIntervalTimer = 10
+  -> State: 4.12 <-
+    laneAisGreen = FALSE
+    laneBisGreen = TRUE
+    eVeh = absent
+    eVehIntervalTimer = 0
+  -> State: 4.13 <-
+    laneBbuttonClicked = TRUE
+    lightIntervalTimer = 1
+  -> State: 4.14 <-
+    lightIntervalTimer = 0
+    walkIntervalTimer = 1
+  -> State: 4.15 <-
+    walkIntervalTimer = 2
+  -> State: 4.16 <-
+    walkIntervalTimer = 3
+  -> State: 4.17 <-
+    walkIntervalTimer = 4
+  -> State: 4.18 <-
+    walkIntervalTimer = 5
+  -> State: 4.19 <-
+    walkIntervalTimer = 6
+  -> State: 4.20 <-
+    walkIntervalTimer = 7
+  -> State: 4.21 <-
+    walkIntervalTimer = 8
+  -> State: 4.22 <-
+    walkIntervalTimer = 9
+  -> State: 4.23 <-
+    walkIntervalTimer = 10
+  -> State: 4.24 <-
+    laneAisGreen = TRUE
+    laneBisGreen = FALSE
+    laneBbuttonClicked = FALSE
+    walkIntervalTimer = 0
+  -> State: 4.25 <-
+    lightIntervalTimer = 1
+  -> State: 4.26 <-
+    lightIntervalTimer = 2
+  -> State: 4.27 <-
+    lightIntervalTimer = 3
+  -> State: 4.28 <-
+    lightIntervalTimer = 4
+  -> State: 4.29 <-
+    lightIntervalTimer = 5
+  -> State: 4.30 <-
+    lightIntervalTimer = 6
+  -> State: 4.31 <-
+    lightIntervalTimer = 7
+  -> State: 4.32 <-
+    lightIntervalTimer = 8
+  -> State: 4.33 <-
+    lightIntervalTimer = 9
+  -> State: 4.34 <-
+    lightIntervalTimer = 10
+  -> State: 4.35 <-
+    lightIntervalTimer = 11
+  -> State: 4.36 <-
+    lightIntervalTimer = 12
+  -> State: 4.37 <-
+    lightIntervalTimer = 13
+  -> State: 4.38 <-
+    lightIntervalTimer = 14
+  -> State: 4.39 <-
+    lightIntervalTimer = 15
+  -> State: 4.40 <-
+    lightIntervalTimer = 16
+  -> State: 4.41 <-
+    lightIntervalTimer = 17
+  -> State: 4.42 <-
+    lightIntervalTimer = 18
+  -> State: 4.43 <-
+    lightIntervalTimer = 19
+  -> State: 4.44 <-
+    lightIntervalTimer = 20
+  -> State: 4.45 <-
+    lightIntervalTimer = 21
+  -> State: 4.46 <-
+    lightIntervalTimer = 22
+  -> State: 4.47 <-
+    lightIntervalTimer = 23
+  -> State: 4.48 <-
+    lightIntervalTimer = 24
+  -> State: 4.49 <-
+    lightIntervalTimer = 25
+  -> State: 4.50 <-
+    lightIntervalTimer = 26
+  -> State: 4.51 <-
+    lightIntervalTimer = 27
+  -> State: 4.52 <-
+    lightIntervalTimer = 28
+  -> State: 4.53 <-
+    lightIntervalTimer = 29
+  -> State: 4.54 <-
+    laneBtraffic = heavy
+    lightIntervalTimer = 30
+  -> State: 4.55 <-
+    laneAisGreen = FALSE
+    laneBisGreen = TRUE
+    laneAtraffic = light
+    laneBtraffic = light
+    laneAbuttonClicked = TRUE
+    eVeh = inLaneA
+    lightInterval = 31
+    walkInterval = 11
+    lightIntervalTimer = 0
+-- specification AG ((laneAbuttonClicked = TRUE & laneBbuttonClicked = TRUE) -> !(laneAbuttonClicked = TRUE))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 5.1 <-
+    laneAisGreen = TRUE
+    laneBisGreen = FALSE
+    laneAtraffic = light
+    laneBtraffic = light
+    laneAbuttonClicked = TRUE
+    laneBbuttonClicked = TRUE
+    eVeh = inLaneA
+    lightInterval = 30
+    walkInterval = 10
+    eVehInterval = 10
+    lightIntervalTimer = 0
+    walkIntervalTimer = 0
+    eVehIntervalTimer = 0
